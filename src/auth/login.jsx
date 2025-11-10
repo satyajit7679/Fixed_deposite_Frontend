@@ -2,9 +2,10 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { Card, Button, Checkbox } from "@material-tailwind/react";
 import axios from "axios";
-import { apiUrl } from "../api/config";
+// import { apiUrl } from "../api/config";
 import { toast } from 'react-toastify';
 import { motion } from "framer-motion";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 function Login() {
   console.log("data");
